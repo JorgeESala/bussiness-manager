@@ -14,16 +14,16 @@ export default function Component() {
         <NavbarLink href="/" active>
           Inicio
         </NavbarLink>
-        <NavbarLink as={Link} to="/customers">
+        <NavbarLink as={Link} href="/customers">
           Clientes
         </NavbarLink>
-        <NavbarLink as={Link} to="/graphics">
+        <NavbarLink as={Link} href="/graphics">
           Gráficas
         </NavbarLink>
-        <NavbarLink as={Link} to="/inventory">
+        <NavbarLink as={Link} href="/inventory">
           Productos
         </NavbarLink>
-        <NavbarLink as={Link} to="contact">
+        <NavbarLink as={Link} href="contact">
           Contacto
         </NavbarLink>
       </NavbarCollapse>
