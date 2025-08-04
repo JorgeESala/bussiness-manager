@@ -1,14 +1,5 @@
 import { useState } from "react";
 
-interface Product {
-  id: number;
-  name: string;
-  category: string;
-  stock: number;
-  price: number;
-  unit: string;
-}
-
 const productsData = [
   {
     id: 1,
