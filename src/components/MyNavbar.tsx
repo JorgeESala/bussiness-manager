@@ -10,7 +10,7 @@ export default function MyNavbar() {
     } hover:text-indigo-200`;
 
   return (
-    <Navbar>
+    <Navbar className="sticky top-0 z-50">
       <NavbarToggle />
       <NavbarCollapse>
         <Link to="/" className={linkClasses("/")}>
