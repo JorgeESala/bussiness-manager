@@ -147,7 +147,7 @@ export default function Graphics() {
   };
 
   return (
-    <div className="p-6">
+    <div className="p4">
       <h1 className="mb-6 text-2xl font-bold text-blue-600 dark:text-blue-400">
         Gráficas
       </h1>
