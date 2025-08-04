@@ -8,7 +8,7 @@ export default function Home() {
         </h1>
         <p className="mb-6 text-gray-600 dark:text-white">
           Este es un demo de un proyecto que muestra cómo se podría ver el
-          sistema de un negocio Explore las siguientes secciones:
+          sistema de un negocio. Explore las siguientes secciones:
         </p>
 
         <ul className="space-y-3">
@@ -25,7 +25,7 @@ export default function Home() {
               to="/graphics"
               className="text-blue-600 hover:underline dark:text-blue-400"
             >
-              → Gráficas
+              → Muestra de gráficas
             </Link>
           </li>
           <li>
@@ -34,6 +34,14 @@ export default function Home() {
               className="text-blue-600 hover:underline dark:text-blue-400"
             >
               → Inventario de productos
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className="text-blue-600 hover:underline dark:text-blue-400"
+            >
+              → Página de contacto
             </Link>
           </li>
         </ul>

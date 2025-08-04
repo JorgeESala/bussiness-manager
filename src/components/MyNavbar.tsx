@@ -1,49 +1,33 @@
-import {
-  Navbar,
-  NavbarCollapse,
-  NavbarLink,
-  NavbarToggle,
-} from "flowbite-react";
 import { Link, useLocation } from "react-router-dom";
+import { Navbar, NavbarCollapse, NavbarToggle } from "flowbite-react";
 
-export default function Component() {
+export default function MyNavbar() {
   const location = useLocation();
+
+  const linkClasses = (path: string) =>
+    `text-base font-medium ${
+      location.pathname === path ? "text-indigo-300" : "text-white"
+    } hover:text-indigo-200`;
 
   return (
     <Navbar>
       <NavbarToggle />
       <NavbarCollapse>
-        <NavbarLink as={Link} to="/" active={location.pathname === "/"}>
+        <Link to="/" className={linkClasses("/")}>
           Inicio
-        </NavbarLink>
-        <NavbarLink
-          as={Link}
-          to="/customers"
-          active={location.pathname === "/customers"}
-        >
+        </Link>
+        <Link to="/customers" className={linkClasses("/customers")}>
           Clientes
-        </NavbarLink>
-        <NavbarLink
-          as={Link}
-          to="/graphics"
-          active={location.pathname === "/graphics"}
-        >
+        </Link>
+        <Link to="/graphics" className={linkClasses("/graphics")}>
           Gráficas
-        </NavbarLink>
-        <NavbarLink
-          as={Link}
-          to="/inventory"
-          active={location.pathname === "/inventory"}
-        >
+        </Link>
+        <Link to="/inventory" className={linkClasses("/inventory")}>
           Productos
-        </NavbarLink>
-        <NavbarLink
-          as={Link}
-          to="/contact"
-          active={location.pathname === "/contact"}
-        >
+        </Link>
+        <Link to="/contact" className={linkClasses("/contact")}>
           Contacto
-        </NavbarLink>
+        </Link>
       </NavbarCollapse>
     </Navbar>
   );
